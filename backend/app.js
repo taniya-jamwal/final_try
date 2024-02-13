@@ -19,7 +19,7 @@ app.use(cors());
 
 
 mongoose
-  .connect(process.env.MONGO_URI)
+  .connect("mongodb+srv://taniyajamwal97:qUEXQzuGH5p36WxG@cluster0.riyehsz.mongodb.net/?retryWrites=true&w=majority");
   .then(() => console.log("MongoDB connected..."))
   .catch((err) => console.log(err));
 
